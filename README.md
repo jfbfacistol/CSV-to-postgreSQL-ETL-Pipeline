@@ -1,4 +1,4 @@
-# Data Engineering Series Challenge: ETL Pipeline with Python and PostgreSQL
+# Data Engineering Project Series: ETL Pipeline with Python and PostgreSQL
 
 Hello! Welcome to my 1st project for the Data Engineering Series Challenge. In this project, I've developed a simple ETL (Extract, Transform, Load) pipeline using Python. The purpose of this pipeline is to efficiently extract data from a CSV file, transform it as needed, and load it into a PostgreSQL database using pgAdmin4.
 
