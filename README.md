@@ -18,7 +18,7 @@ To use this ETL pipeline:
 
 1. Make sure you have Python installed on your system.
 2. Install the required dependencies by running:
-    pip install pandas chardet sqlalchemy psycopg2 
+    `pip install pandas chardet sqlalchemy psycopg2` 
 3. Ensure you have PostgreSQL installed and running, with pgAdmin4 as the administration platform.
 4. Clone this repository or download the `spotifydatapipeline.py` file. 
 5. Replace the `spotify-2023.csv` file with your desired CSV file, or rename your CSV file to match. 
