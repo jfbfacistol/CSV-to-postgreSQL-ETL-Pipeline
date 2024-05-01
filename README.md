@@ -4,10 +4,12 @@ Hello! Welcome to my 1st project for the Data Engineering Series Challenge. In t
 
 ## Overview
 
-The ETL process involves three main steps:
 
+The ETL process involves three main steps:
+<br><br> <img src="https://miro.medium.com/v2/resize:fit:1014/1*mwRdNRy03Ucn7Y04aitqgA.png" width="400">
+<br>
 1. **Extract**: Data is extracted from a CSV file.
-2. **Transform**: The extracted data is cleaned and transformed into a suitable format.
+2. **Transform**: With a Python script, the extracted data undergoes cleaning and transformation to attain a suitable format.
 3. **Load**: The transformed data is loaded into a PostgreSQL database.
 
 For this project, I've chosen to work with a CSV file named `spotify-2023.csv` as our data source.
