@@ -24,7 +24,7 @@ To use this ETL pipeline:
 5. Replace the `spotify-2023.csv` file with your desired CSV file, or rename your CSV file to match. 
 6. Open `spotifydatapipeline.py` and adjust any configuration settings as necessary (such as database connection details). Make sure to use and modify the template `config.py` to your own postgreSQL settings. 
 7. Run the script:
-    python spotifydatapipeline.py
+ `spotifydatapipeline.py`
 
 
 ## File Structure
