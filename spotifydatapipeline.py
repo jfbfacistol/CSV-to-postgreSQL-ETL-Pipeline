@@ -66,6 +66,7 @@ def load(df, connection, spotify):
     cur = None
     try:
         rows_imported = 0
+        # for the modify the credentials part and use config file
         engine = sa.create_engine(f'postgresql://{credentials.username}:{credentials.pwd}@{credentials.hostname}:{credentials.port_id}/{credentials.database}')
         df.to_sql(spotify, engine, if_exists='append', index=False)
         rows_imported += len(df)
