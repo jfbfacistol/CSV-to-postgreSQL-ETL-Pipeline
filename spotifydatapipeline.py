@@ -5,24 +5,23 @@ import sqlalchemy as sa
 import psycopg2
 import credentials
 
-# Data Extraction
-# Get the directory of the current script
-script_dir = os.path.dirname(os.path.abspath(__file__))
-
-# Specify the relative path to your CSV file
-relative_path = "Data\\spotify-2023.csv"
-
-# Construct the full path to the CSV file
-file_path = os.path.join(script_dir, relative_path)
-
-# Detect the encoding of the CSV file
-with open(file_path, 'rb') as f:
-    raw_data = f.read()
-    encoding_result = ch.detect(raw_data)
-    file_encoding = encoding_result['encoding']
-
-# Read the CSV file using the detected encoding
-def extract_data(file_path, file_encoding):
+def extract_data():
+    # Get the directory of the current script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    # Specify the relative path to your CSV file
+    relative_path = "Data\\spotify-2023.csv"
+    
+    # Construct the full path to the CSV file
+    file_path = os.path.join(script_dir, relative_path)
+    
+    # Detect the encoding of the CSV file
+    with open(file_path, 'rb') as f:
+        raw_data = f.read()
+        encoding_result = ch.detect(raw_data)
+        file_encoding = encoding_result['encoding']
+    
+    # Read the CSV file using the detected encoding
     data = pd.read_csv(file_path, encoding=file_encoding)
     print("Data extracted successfully.")
     return data
@@ -97,7 +96,7 @@ if __name__ == "__main__":
         file_encoding = encoding_result['encoding']
         
     # Read the CSV file using the detected encoding
-    data = extract_data(file_path, file_encoding)
+    data = extract_data()
     transformed_data, output_file_path = transform_data(data)
 
     conn = None 
