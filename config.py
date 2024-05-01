@@ -1,4 +1,4 @@
-# config template
+# template for credentials
 
 hostname = 'yourhostname'
 database = 'yourdatabase'
